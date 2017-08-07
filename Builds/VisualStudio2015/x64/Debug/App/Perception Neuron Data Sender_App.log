@@ -2,16 +2,17 @@
   NeuronConnection.cpp
 C:\SDKs\NeuronDataReader SDK b17\include\NeuronDataReader\DataType.h(50): warning C4201: nonstandard extension used: nameless struct/union
 ..\..\Source\NeuronConnection.cpp(64): warning C4100: 'sender': unreferenced formal parameter
-..\..\Source\NeuronConnection.cpp(76): warning C4100: 'data': unreferenced formal parameter
-..\..\Source\NeuronConnection.cpp(76): warning C4100: 'header': unreferenced formal parameter
-..\..\Source\NeuronConnection.cpp(76): warning C4100: 'sender': unreferenced formal parameter
-..\..\Source\NeuronConnection.cpp(108): warning C4018: '<': signed/unsigned mismatch
-..\..\Source\NeuronConnection.cpp(120): warning C4458: declaration of 'dataArray' hides class member
-  j:\d\documents\newproject\source\NeuronConnection.h(80): note: see declaration of 'NeuronConnection::dataArray'
-..\..\Source\NeuronConnection.cpp(121): warning C4456: declaration of 'i' hides previous local declaration
-  ..\..\Source\NeuronConnection.cpp(108): note: see declaration of 'i'
-..\..\Source\NeuronConnection.cpp(122): warning C4244: '=': conversion from 'float' to 'char', possible loss of data
-..\..\Source\NeuronConnection.cpp(131): warning C4018: '<': signed/unsigned mismatch
-..\..\Source\NeuronConnection.cpp(146): warning C4456: declaration of 'i' hides previous local declaration
-  ..\..\Source\NeuronConnection.cpp(131): note: see declaration of 'i'
-  Perception Neuron Data Sender_App.vcxproj -> J:\D\Documents\NewProject\Builds\VisualStudio2015\x64\Debug\App\NewProject.exe
+..\..\Source\NeuronConnection.cpp(77): warning C4100: 'data': unreferenced formal parameter
+..\..\Source\NeuronConnection.cpp(77): warning C4100: 'header': unreferenced formal parameter
+..\..\Source\NeuronConnection.cpp(77): warning C4100: 'sender': unreferenced formal parameter
+..\..\Source\NeuronConnection.cpp(109): warning C4018: '<': signed/unsigned mismatch
+..\..\Source\NeuronConnection.cpp(121): warning C4458: declaration of 'dataArray' hides class member
+  c:\users\coduser\documents\github\perception_neuron_data_sender\source\NeuronConnection.h(81): note: see declaration of 'NeuronConnection::dataArray'
+..\..\Source\NeuronConnection.cpp(122): warning C4456: declaration of 'i' hides previous local declaration
+  ..\..\Source\NeuronConnection.cpp(109): note: see declaration of 'i'
+..\..\Source\NeuronConnection.cpp(123): warning C4244: '=': conversion from 'float' to 'char', possible loss of data
+..\..\Source\NeuronConnection.cpp(132): warning C4018: '<': signed/unsigned mismatch
+..\..\Source\NeuronConnection.cpp(147): warning C4456: declaration of 'i' hides previous local declaration
+  ..\..\Source\NeuronConnection.cpp(132): note: see declaration of 'i'
+  Perception Neuron Data Sender_App.vcxproj -> C:\Users\coduser\Documents\GitHub\Perception_Neuron_Data_Sender\Builds\VisualStudio2015\\x64\Debug\App\NewProject.exe
+  Perception Neuron Data Sender_App.vcxproj -> x64\Debug\App\\NewProject.pdb (Full PDB)

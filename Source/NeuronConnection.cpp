@@ -69,6 +69,7 @@ void NeuronConnection::ShowBvhBoneInfo(SOCKET_REF sender, BvhDataHeader* header,
 		m_dataCount = header->DataCount;
 	bvhData = data;
 	dataHeader = header;
+	dataReceived = true;
 	//BvhExport(header, data);
 }
 
@@ -81,12 +82,12 @@ void NeuronConnection::BvhExport() {
 	
 	// Initial connection :
 	// We get the initial offsets and the hierarchy
-	if (m_firstWrite) {
+	if (dataReceived) {
 		m_firstWrite = false;
 
 		m_perJoint = 3;
 
-		if (dataHeader->WithDisp)
+		if (dataHeader && dataHeader->WithDisp)
 			m_perJoint = 6;
 
 		// Stupid way to wipe the content of tmp.bvh
@@ -98,7 +99,7 @@ void NeuronConnection::BvhExport() {
 
 	m_outfile.open("tmp.bvh", std::ios::out | std::ios::app);
 	int offset = 5;
-	if (!m_outfile.fail()) {
+	if (dataReceived) {
 		m_currentFrame = dataHeader->FrameIndex;
 
 		if(m_perJoint == 3) {

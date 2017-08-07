@@ -77,6 +77,7 @@ private:
 
 	//JUCE related variables
 	DatagramSocket udp;
+	bool dataReceived = false;
 	char dataArray[512];
 	void run() override;
 	int port=8888;
