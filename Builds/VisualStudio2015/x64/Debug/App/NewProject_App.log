@@ -1,0 +1,15 @@
+﻿  GUI.cpp
+  MainComponent.cpp
+  Main.cpp
+  include_juce_core.cpp
+..\..\Source\Main.cpp(27): warning C4100: 'commandLine': unreferenced formal parameter
+..\..\Source\Main.cpp(49): warning C4100: 'commandLine': unreferenced formal parameter
+  include_juce_cryptography.cpp
+  include_juce_data_structures.cpp
+  include_juce_events.cpp
+  include_juce_graphics.cpp
+  include_juce_gui_basics.cpp
+  include_juce_gui_extra.cpp
+  include_juce_opengl.cpp
+  include_juce_video.cpp
+  NewProject_App.vcxproj -> J:\D\Documents\NewProject\Builds\VisualStudio2015\x64\Debug\App\NewProject.exe
