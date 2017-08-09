@@ -1,6 +1,0 @@
-﻿C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppBuild.targets(392,5): warning MSB8028: The intermediate directory (x64\Debug\App\) contains files shared from another project (NewProject_App.vcxproj).  This can lead to incorrect clean and rebuild behavior.
-  GUI.cpp
-  Main.cpp
-..\..\Source\Main.cpp(27): warning C4100: 'commandLine': unreferenced formal parameter
-..\..\Source\Main.cpp(49): warning C4100: 'commandLine': unreferenced formal parameter
-  Perception Neuron Sender_App.vcxproj -> J:\D\Documents\NewProject\Builds\VisualStudio2015\x64\Debug\App\NewProject.exe
