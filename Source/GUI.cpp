@@ -7,7 +7,7 @@
   the "//[xyz]" and "//[/xyz]" sections will be retained when the file is loaded
   and re-saved.
 
-  Created with Projucer version: 5.1.0
+  Created with Projucer version: 5.1.1
 
   ------------------------------------------------------------------------------
 
@@ -64,40 +64,45 @@ GUI::GUI ()
     portLabel->setColour (TextEditor::textColourId, Colours::black);
     portLabel->setColour (TextEditor::backgroundColourId, Colour (0x00000000));
 
-    addAndMakeVisible (toggleButton = new ToggleButton ("new toggle button"));
-    toggleButton->setButtonText (String());
-    toggleButton->addListener (this);
-    toggleButton->setColour (ToggleButton::textColourId, Colours::black);
+    addAndMakeVisible (leftIndex1 = new ToggleButton ("leftIndex1"));
+    leftIndex1->setButtonText (String());
+    leftIndex1->addListener (this);
+    leftIndex1->setToggleState (true, dontSendNotification);
+    leftIndex1->setColour (ToggleButton::textColourId, Colours::black);
 
-    addAndMakeVisible (toggleButton2 = new ToggleButton ("new toggle button"));
-    toggleButton2->setButtonText (String());
-    toggleButton2->addListener (this);
-    toggleButton2->setColour (ToggleButton::textColourId, Colours::black);
+    addAndMakeVisible (leftIndex2 = new ToggleButton ("leftIndex2"));
+    leftIndex2->setButtonText (String());
+    leftIndex2->addListener (this);
+    leftIndex2->setColour (ToggleButton::textColourId, Colours::black);
 
-    addAndMakeVisible (toggleButton3 = new ToggleButton ("new toggle button"));
-    toggleButton3->setButtonText (String());
-    toggleButton3->addListener (this);
-    toggleButton3->setColour (ToggleButton::textColourId, Colours::black);
+    addAndMakeVisible (leftMiddle = new ToggleButton ("leftMiddle"));
+    leftMiddle->setButtonText (String());
+    leftMiddle->addListener (this);
+    leftMiddle->setToggleState (true, dontSendNotification);
+    leftMiddle->setColour (ToggleButton::textColourId, Colours::black);
 
-    addAndMakeVisible (toggleButton4 = new ToggleButton ("new toggle button"));
-    toggleButton4->setButtonText (String());
-    toggleButton4->addListener (this);
-    toggleButton4->setColour (ToggleButton::textColourId, Colours::black);
+    addAndMakeVisible (leftRing = new ToggleButton ("leftRing"));
+    leftRing->setButtonText (String());
+    leftRing->addListener (this);
+    leftRing->setToggleState (true, dontSendNotification);
+    leftRing->setColour (ToggleButton::textColourId, Colours::black);
 
-    addAndMakeVisible (toggleButton5 = new ToggleButton ("new toggle button"));
-    toggleButton5->setButtonText (String());
-    toggleButton5->addListener (this);
-    toggleButton5->setColour (ToggleButton::textColourId, Colours::black);
+    addAndMakeVisible (leftPinky = new ToggleButton ("leftPinky"));
+    leftPinky->setButtonText (String());
+    leftPinky->addListener (this);
+    leftPinky->setToggleState (true, dontSendNotification);
+    leftPinky->setColour (ToggleButton::textColourId, Colours::black);
 
-    addAndMakeVisible (toggleButton6 = new ToggleButton ("new toggle button"));
-    toggleButton6->setButtonText (String());
-    toggleButton6->addListener (this);
-    toggleButton6->setColour (ToggleButton::textColourId, Colours::black);
+    addAndMakeVisible (leftThumb2 = new ToggleButton ("leftThumb2"));
+    leftThumb2->setButtonText (String());
+    leftThumb2->addListener (this);
+    leftThumb2->setColour (ToggleButton::textColourId, Colours::black);
 
-    addAndMakeVisible (toggleButton7 = new ToggleButton ("new toggle button"));
-    toggleButton7->setButtonText (String());
-    toggleButton7->addListener (this);
-    toggleButton7->setColour (ToggleButton::textColourId, Colours::black);
+    addAndMakeVisible (leftThumb1 = new ToggleButton ("leftThumb1"));
+    leftThumb1->setButtonText (String());
+    leftThumb1->addListener (this);
+    leftThumb1->setToggleState (true, dontSendNotification);
+    leftThumb1->setColour (ToggleButton::textColourId, Colours::black);
 
     addAndMakeVisible (textButton = new TextButton ("new button"));
     textButton->setButtonText (TRANS("Calibrate"));
@@ -114,40 +119,40 @@ GUI::GUI ()
     ipLabel->setColour (TextEditor::textColourId, Colours::black);
     ipLabel->setColour (TextEditor::backgroundColourId, Colour (0x00000000));
 
-    addAndMakeVisible (toggleButton8 = new ToggleButton ("new toggle button"));
-    toggleButton8->setButtonText (String());
-    toggleButton8->addListener (this);
-    toggleButton8->setColour (ToggleButton::textColourId, Colours::black);
+    addAndMakeVisible (rightIndex1 = new ToggleButton ("rightIndex1"));
+    rightIndex1->setButtonText (String());
+    rightIndex1->addListener (this);
+    rightIndex1->setColour (ToggleButton::textColourId, Colours::black);
 
-    addAndMakeVisible (toggleButton9 = new ToggleButton ("new toggle button"));
-    toggleButton9->setButtonText (String());
-    toggleButton9->addListener (this);
-    toggleButton9->setColour (ToggleButton::textColourId, Colours::black);
+    addAndMakeVisible (rightIndex2 = new ToggleButton ("rightIndex2"));
+    rightIndex2->setButtonText (String());
+    rightIndex2->addListener (this);
+    rightIndex2->setColour (ToggleButton::textColourId, Colours::black);
 
-    addAndMakeVisible (toggleButton10 = new ToggleButton ("new toggle button"));
-    toggleButton10->setButtonText (String());
-    toggleButton10->addListener (this);
-    toggleButton10->setColour (ToggleButton::textColourId, Colours::black);
+    addAndMakeVisible (rightMiddle = new ToggleButton ("rightMiddle"));
+    rightMiddle->setButtonText (String());
+    rightMiddle->addListener (this);
+    rightMiddle->setColour (ToggleButton::textColourId, Colours::black);
 
-    addAndMakeVisible (toggleButton11 = new ToggleButton ("new toggle button"));
-    toggleButton11->setButtonText (String());
-    toggleButton11->addListener (this);
-    toggleButton11->setColour (ToggleButton::textColourId, Colours::black);
+    addAndMakeVisible (rightRing = new ToggleButton ("rightRing"));
+    rightRing->setButtonText (String());
+    rightRing->addListener (this);
+    rightRing->setColour (ToggleButton::textColourId, Colours::black);
 
-    addAndMakeVisible (toggleButton12 = new ToggleButton ("new toggle button"));
-    toggleButton12->setButtonText (String());
-    toggleButton12->addListener (this);
-    toggleButton12->setColour (ToggleButton::textColourId, Colours::black);
+    addAndMakeVisible (rightPinky = new ToggleButton ("rightPinky"));
+    rightPinky->setButtonText (String());
+    rightPinky->addListener (this);
+    rightPinky->setColour (ToggleButton::textColourId, Colours::black);
 
-    addAndMakeVisible (toggleButton13 = new ToggleButton ("new toggle button"));
-    toggleButton13->setButtonText (String());
-    toggleButton13->addListener (this);
-    toggleButton13->setColour (ToggleButton::textColourId, Colours::black);
+    addAndMakeVisible (rightThumb2 = new ToggleButton ("rightThumb2"));
+    rightThumb2->setButtonText (String());
+    rightThumb2->addListener (this);
+    rightThumb2->setColour (ToggleButton::textColourId, Colours::black);
 
-    addAndMakeVisible (toggleButton14 = new ToggleButton ("new toggle button"));
-    toggleButton14->setButtonText (String());
-    toggleButton14->addListener (this);
-    toggleButton14->setColour (ToggleButton::textColourId, Colours::black);
+    addAndMakeVisible (rightThumb1 = new ToggleButton ("rightThumb1"));
+    rightThumb1->setButtonText (String());
+    rightThumb1->addListener (this);
+    rightThumb1->setColour (ToggleButton::textColourId, Colours::black);
 
     cachedImage_hands2_png2_1 = ImageCache::getFromMemory (hands2_png2, hands2_png2Size);
 
@@ -158,6 +163,7 @@ GUI::GUI ()
 
 
     //[Constructor] You can add your own custom stuff here..
+	getToggleStates();
 	ipEditor->addListener(this);
 	portEditor->addListener(this);
 	NCon.addChangeListener(this);
@@ -184,22 +190,22 @@ GUI::~GUI()
     ipEditor = nullptr;
     portEditor = nullptr;
     portLabel = nullptr;
-    toggleButton = nullptr;
-    toggleButton2 = nullptr;
-    toggleButton3 = nullptr;
-    toggleButton4 = nullptr;
-    toggleButton5 = nullptr;
-    toggleButton6 = nullptr;
-    toggleButton7 = nullptr;
+    leftIndex1 = nullptr;
+    leftIndex2 = nullptr;
+    leftMiddle = nullptr;
+    leftRing = nullptr;
+    leftPinky = nullptr;
+    leftThumb2 = nullptr;
+    leftThumb1 = nullptr;
     textButton = nullptr;
     ipLabel = nullptr;
-    toggleButton8 = nullptr;
-    toggleButton9 = nullptr;
-    toggleButton10 = nullptr;
-    toggleButton11 = nullptr;
-    toggleButton12 = nullptr;
-    toggleButton13 = nullptr;
-    toggleButton14 = nullptr;
+    rightIndex1 = nullptr;
+    rightIndex2 = nullptr;
+    rightMiddle = nullptr;
+    rightRing = nullptr;
+    rightPinky = nullptr;
+    rightThumb2 = nullptr;
+    rightThumb1 = nullptr;
 
 
     //[Destructor]. You can add your own custom destruction code here..
@@ -238,22 +244,22 @@ void GUI::resized()
     ipEditor->setBounds (104, 16, 96, 16);
     portEditor->setBounds (248, 16, 64, 16);
     portLabel->setBounds (216, 16, 32, 16);
-    toggleButton->setBounds (65, 146, 32, 24);
-    toggleButton2->setBounds (66, 183, 32, 24);
-    toggleButton3->setBounds (98, 136, 32, 24);
-    toggleButton4->setBounds (132, 152, 32, 24);
-    toggleButton5->setBounds (159, 176, 32, 24);
-    toggleButton6->setBounds (32, 223, 32, 24);
-    toggleButton7->setBounds (19, 197, 32, 24);
+    leftIndex1->setBounds (65, 146, 32, 24);
+    leftIndex2->setBounds (66, 183, 32, 24);
+    leftMiddle->setBounds (98, 136, 32, 24);
+    leftRing->setBounds (132, 152, 32, 24);
+    leftPinky->setBounds (159, 176, 32, 24);
+    leftThumb2->setBounds (32, 223, 32, 24);
+    leftThumb1->setBounds (19, 197, 32, 24);
     textButton->setBounds (152, 62, 96, 24);
     ipLabel->setBounds (72, 16, 32, 16);
-    toggleButton8->setBounds (309, 146, 32, 24);
-    toggleButton9->setBounds (307, 183, 32, 24);
-    toggleButton10->setBounds (276, 136, 32, 24);
-    toggleButton11->setBounds (242, 152, 32, 24);
-    toggleButton12->setBounds (215, 176, 32, 24);
-    toggleButton13->setBounds (342, 223, 32, 24);
-    toggleButton14->setBounds (355, 197, 32, 24);
+    rightIndex1->setBounds (309, 146, 32, 24);
+    rightIndex2->setBounds (307, 183, 32, 24);
+    rightMiddle->setBounds (276, 136, 32, 24);
+    rightRing->setBounds (242, 152, 32, 24);
+    rightPinky->setBounds (215, 176, 32, 24);
+    rightThumb2->setBounds (342, 223, 32, 24);
+    rightThumb1->setBounds (355, 197, 32, 24);
     //[UserResized] Add your own custom resize handling here..
     //[/UserResized]
 }
@@ -263,80 +269,89 @@ void GUI::buttonClicked (Button* buttonThatWasClicked)
     //[UserbuttonClicked_Pre]
     //[/UserbuttonClicked_Pre]
 
-    if (buttonThatWasClicked == toggleButton)
+    if (buttonThatWasClicked == leftIndex1)
     {
-        //[UserButtonCode_toggleButton] -- add your button handler code here..
-        //[/UserButtonCode_toggleButton]
+        //[UserButtonCode_leftIndex1] -- add your button handler code here..
+		NCon.getActiveFingerArray()[LeftIndexIndex] = leftIndex1->getToggleState();
+        //[/UserButtonCode_leftIndex1]
     }
-    else if (buttonThatWasClicked == toggleButton2)
+    else if (buttonThatWasClicked == leftIndex2)
     {
-        //[UserButtonCode_toggleButton2] -- add your button handler code here..
-        //[/UserButtonCode_toggleButton2]
+        //[UserButtonCode_leftIndex2] -- add your button handler code here..
+        //[/UserButtonCode_leftIndex2]
     }
-    else if (buttonThatWasClicked == toggleButton3)
+    else if (buttonThatWasClicked == leftMiddle)
     {
-        //[UserButtonCode_toggleButton3] -- add your button handler code here..
-        //[/UserButtonCode_toggleButton3]
+        //[UserButtonCode_leftMiddle] -- add your button handler code here..
+		NCon.getActiveFingerArray()[LeftMiddleIndex] = leftMiddle->getToggleState();
+        //[/UserButtonCode_leftMiddle]
     }
-    else if (buttonThatWasClicked == toggleButton4)
+    else if (buttonThatWasClicked == leftRing)
     {
-        //[UserButtonCode_toggleButton4] -- add your button handler code here..
-        //[/UserButtonCode_toggleButton4]
+        //[UserButtonCode_leftRing] -- add your button handler code here..
+		NCon.getActiveFingerArray()[LeftRingIndex] = leftRing->getToggleState();
+
+        //[/UserButtonCode_leftRing]
     }
-    else if (buttonThatWasClicked == toggleButton5)
+    else if (buttonThatWasClicked == leftPinky)
     {
-        //[UserButtonCode_toggleButton5] -- add your button handler code here..
-        //[/UserButtonCode_toggleButton5]
+        //[UserButtonCode_leftPinky] -- add your button handler code here..
+		NCon.getActiveFingerArray()[LeftPinkyIndex] = leftPinky->getToggleState();
+
+        //[/UserButtonCode_leftPinky]
     }
-    else if (buttonThatWasClicked == toggleButton6)
+    else if (buttonThatWasClicked == leftThumb2)
     {
-        //[UserButtonCode_toggleButton6] -- add your button handler code here..
-        //[/UserButtonCode_toggleButton6]
+        //[UserButtonCode_leftThumb2] -- add your button handler code here..
+
+        //[/UserButtonCode_leftThumb2]
     }
-    else if (buttonThatWasClicked == toggleButton7)
+    else if (buttonThatWasClicked == leftThumb1)
     {
-        //[UserButtonCode_toggleButton7] -- add your button handler code here..
-        //[/UserButtonCode_toggleButton7]
+        //[UserButtonCode_leftThumb1] -- add your button handler code here..
+		NCon.getActiveFingerArray()[LeftThumbIndex] = leftThumb1->getToggleState();
+
+        //[/UserButtonCode_leftThumb1]
     }
     else if (buttonThatWasClicked == textButton)
     {
         //[UserButtonCode_textButton] -- add your button handler code here..
         //[/UserButtonCode_textButton]
     }
-    else if (buttonThatWasClicked == toggleButton8)
+    else if (buttonThatWasClicked == rightIndex1)
     {
-        //[UserButtonCode_toggleButton8] -- add your button handler code here..
-        //[/UserButtonCode_toggleButton8]
+        //[UserButtonCode_rightIndex1] -- add your button handler code here..
+        //[/UserButtonCode_rightIndex1]
     }
-    else if (buttonThatWasClicked == toggleButton9)
+    else if (buttonThatWasClicked == rightIndex2)
     {
-        //[UserButtonCode_toggleButton9] -- add your button handler code here..
-        //[/UserButtonCode_toggleButton9]
+        //[UserButtonCode_rightIndex2] -- add your button handler code here..
+        //[/UserButtonCode_rightIndex2]
     }
-    else if (buttonThatWasClicked == toggleButton10)
+    else if (buttonThatWasClicked == rightMiddle)
     {
-        //[UserButtonCode_toggleButton10] -- add your button handler code here..
-        //[/UserButtonCode_toggleButton10]
+        //[UserButtonCode_rightMiddle] -- add your button handler code here..
+        //[/UserButtonCode_rightMiddle]
     }
-    else if (buttonThatWasClicked == toggleButton11)
+    else if (buttonThatWasClicked == rightRing)
     {
-        //[UserButtonCode_toggleButton11] -- add your button handler code here..
-        //[/UserButtonCode_toggleButton11]
+        //[UserButtonCode_rightRing] -- add your button handler code here..
+        //[/UserButtonCode_rightRing]
     }
-    else if (buttonThatWasClicked == toggleButton12)
+    else if (buttonThatWasClicked == rightPinky)
     {
-        //[UserButtonCode_toggleButton12] -- add your button handler code here..
-        //[/UserButtonCode_toggleButton12]
+        //[UserButtonCode_rightPinky] -- add your button handler code here..
+        //[/UserButtonCode_rightPinky]
     }
-    else if (buttonThatWasClicked == toggleButton13)
+    else if (buttonThatWasClicked == rightThumb2)
     {
-        //[UserButtonCode_toggleButton13] -- add your button handler code here..
-        //[/UserButtonCode_toggleButton13]
+        //[UserButtonCode_rightThumb2] -- add your button handler code here..
+        //[/UserButtonCode_rightThumb2]
     }
-    else if (buttonThatWasClicked == toggleButton14)
+    else if (buttonThatWasClicked == rightThumb1)
     {
-        //[UserButtonCode_toggleButton14] -- add your button handler code here..
-        //[/UserButtonCode_toggleButton14]
+        //[UserButtonCode_rightThumb1] -- add your button handler code here..
+        //[/UserButtonCode_rightThumb1]
     }
 
     //[UserbuttonClicked_Post]
@@ -367,7 +382,13 @@ void GUI::textEditorReturnKeyPressed(TextEditor& editor) {
 		NCon.setPort(portInt);
 	}
 }
-
+void GUI::getToggleStates() {
+	NCon.getActiveFingerArray()[LeftThumbIndex] = leftThumb1->getToggleState();
+	NCon.getActiveFingerArray()[LeftIndexIndex] = leftIndex1->getToggleState();
+	NCon.getActiveFingerArray()[LeftMiddleIndex] = leftMiddle->getToggleState();
+	NCon.getActiveFingerArray()[LeftRingIndex] = leftRing->getToggleState();
+	NCon.getActiveFingerArray()[LeftPinkyIndex] = leftPinky->getToggleState();
+}
 
 //[/MiscUserCode]
 
@@ -403,34 +424,34 @@ BEGIN_JUCER_METADATA
          editableSingleClick="0" editableDoubleClick="0" focusDiscardsChanges="0"
          fontname="Default font" fontsize="11" kerning="0" bold="0" italic="0"
          justification="33"/>
-  <TOGGLEBUTTON name="new toggle button" id="69df99e233e54dd7" memberName="toggleButton"
+  <TOGGLEBUTTON name="leftIndex1" id="69df99e233e54dd7" memberName="leftIndex1"
                 virtualName="" explicitFocusOrder="0" pos="65 146 32 24" txtcol="ff000000"
                 buttonText="" connectedEdges="0" needsCallback="1" radioGroupId="0"
-                state="0"/>
-  <TOGGLEBUTTON name="new toggle button" id="491f66a831ace156" memberName="toggleButton2"
+                state="1"/>
+  <TOGGLEBUTTON name="leftIndex2" id="491f66a831ace156" memberName="leftIndex2"
                 virtualName="" explicitFocusOrder="0" pos="66 183 32 24" txtcol="ff000000"
                 buttonText="" connectedEdges="0" needsCallback="1" radioGroupId="0"
                 state="0"/>
-  <TOGGLEBUTTON name="new toggle button" id="8f9faaba7e144160" memberName="toggleButton3"
+  <TOGGLEBUTTON name="leftMiddle" id="8f9faaba7e144160" memberName="leftMiddle"
                 virtualName="" explicitFocusOrder="0" pos="98 136 32 24" txtcol="ff000000"
                 buttonText="" connectedEdges="0" needsCallback="1" radioGroupId="0"
-                state="0"/>
-  <TOGGLEBUTTON name="new toggle button" id="4201e0ca1f39f5e5" memberName="toggleButton4"
-                virtualName="" explicitFocusOrder="0" pos="132 152 32 24" txtcol="ff000000"
+                state="1"/>
+  <TOGGLEBUTTON name="leftRing" id="4201e0ca1f39f5e5" memberName="leftRing" virtualName=""
+                explicitFocusOrder="0" pos="132 152 32 24" txtcol="ff000000"
                 buttonText="" connectedEdges="0" needsCallback="1" radioGroupId="0"
-                state="0"/>
-  <TOGGLEBUTTON name="new toggle button" id="3826a2dc2af4e635" memberName="toggleButton5"
+                state="1"/>
+  <TOGGLEBUTTON name="leftPinky" id="3826a2dc2af4e635" memberName="leftPinky"
                 virtualName="" explicitFocusOrder="0" pos="159 176 32 24" txtcol="ff000000"
                 buttonText="" connectedEdges="0" needsCallback="1" radioGroupId="0"
-                state="0"/>
-  <TOGGLEBUTTON name="new toggle button" id="b8ea36679632b858" memberName="toggleButton6"
+                state="1"/>
+  <TOGGLEBUTTON name="leftThumb2" id="b8ea36679632b858" memberName="leftThumb2"
                 virtualName="" explicitFocusOrder="0" pos="32 223 32 24" txtcol="ff000000"
                 buttonText="" connectedEdges="0" needsCallback="1" radioGroupId="0"
                 state="0"/>
-  <TOGGLEBUTTON name="new toggle button" id="aab54a25c4951c53" memberName="toggleButton7"
+  <TOGGLEBUTTON name="leftThumb1" id="aab54a25c4951c53" memberName="leftThumb1"
                 virtualName="" explicitFocusOrder="0" pos="19 197 32 24" txtcol="ff000000"
                 buttonText="" connectedEdges="0" needsCallback="1" radioGroupId="0"
-                state="0"/>
+                state="1"/>
   <TEXTBUTTON name="new button" id="813fd2e0656b385f" memberName="textButton"
               virtualName="" explicitFocusOrder="0" pos="152 62 96 24" bgColOff="ff00a2e8"
               buttonText="Calibrate" connectedEdges="0" needsCallback="1" radioGroupId="0"/>
@@ -439,31 +460,31 @@ BEGIN_JUCER_METADATA
          edTextCol="ff000000" edBkgCol="0" labelText="IP" editableSingleClick="0"
          editableDoubleClick="0" focusDiscardsChanges="0" fontname="Default font"
          fontsize="11" kerning="0" bold="0" italic="0" justification="33"/>
-  <TOGGLEBUTTON name="new toggle button" id="3aaf95ad34ea0a43" memberName="toggleButton8"
+  <TOGGLEBUTTON name="rightIndex1" id="3aaf95ad34ea0a43" memberName="rightIndex1"
                 virtualName="" explicitFocusOrder="0" pos="309 146 32 24" txtcol="ff000000"
                 buttonText="" connectedEdges="0" needsCallback="1" radioGroupId="0"
                 state="0"/>
-  <TOGGLEBUTTON name="new toggle button" id="e686879a1470d2fb" memberName="toggleButton9"
+  <TOGGLEBUTTON name="rightIndex2" id="e686879a1470d2fb" memberName="rightIndex2"
                 virtualName="" explicitFocusOrder="0" pos="307 183 32 24" txtcol="ff000000"
                 buttonText="" connectedEdges="0" needsCallback="1" radioGroupId="0"
                 state="0"/>
-  <TOGGLEBUTTON name="new toggle button" id="ea537e695fb03797" memberName="toggleButton10"
+  <TOGGLEBUTTON name="rightMiddle" id="ea537e695fb03797" memberName="rightMiddle"
                 virtualName="" explicitFocusOrder="0" pos="276 136 32 24" txtcol="ff000000"
                 buttonText="" connectedEdges="0" needsCallback="1" radioGroupId="0"
                 state="0"/>
-  <TOGGLEBUTTON name="new toggle button" id="16a1d3642bd6faaf" memberName="toggleButton11"
+  <TOGGLEBUTTON name="rightRing" id="16a1d3642bd6faaf" memberName="rightRing"
                 virtualName="" explicitFocusOrder="0" pos="242 152 32 24" txtcol="ff000000"
                 buttonText="" connectedEdges="0" needsCallback="1" radioGroupId="0"
                 state="0"/>
-  <TOGGLEBUTTON name="new toggle button" id="a61bc3d79b38ae72" memberName="toggleButton12"
+  <TOGGLEBUTTON name="rightPinky" id="a61bc3d79b38ae72" memberName="rightPinky"
                 virtualName="" explicitFocusOrder="0" pos="215 176 32 24" txtcol="ff000000"
                 buttonText="" connectedEdges="0" needsCallback="1" radioGroupId="0"
                 state="0"/>
-  <TOGGLEBUTTON name="new toggle button" id="ca2e94788497a19c" memberName="toggleButton13"
+  <TOGGLEBUTTON name="rightThumb2" id="ca2e94788497a19c" memberName="rightThumb2"
                 virtualName="" explicitFocusOrder="0" pos="342 223 32 24" txtcol="ff000000"
                 buttonText="" connectedEdges="0" needsCallback="1" radioGroupId="0"
                 state="0"/>
-  <TOGGLEBUTTON name="new toggle button" id="aa0b3d2d4a1469ff" memberName="toggleButton14"
+  <TOGGLEBUTTON name="rightThumb1" id="aa0b3d2d4a1469ff" memberName="rightThumb1"
                 virtualName="" explicitFocusOrder="0" pos="355 197 32 24" txtcol="ff000000"
                 buttonText="" connectedEdges="0" needsCallback="1" radioGroupId="0"
                 state="0"/>

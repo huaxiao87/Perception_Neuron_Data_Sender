@@ -7,7 +7,7 @@
   the "//[xyz]" and "//[/xyz]" sections will be retained when the file is loaded
   and re-saved.
 
-  Created with Projucer version: 5.1.0
+  Created with Projucer version: 5.1.1
 
   ------------------------------------------------------------------------------
 
@@ -71,29 +71,29 @@ private:
 	NeuronConnection NCon;
 	void changeListenerCallback(ChangeBroadcaster* source) override;
 	void textEditorReturnKeyPressed(TextEditor&) override;
-
+	void getToggleStates();
     //[/UserVariables]
 
     //==============================================================================
     ScopedPointer<TextEditor> ipEditor;
     ScopedPointer<TextEditor> portEditor;
     ScopedPointer<Label> portLabel;
-    ScopedPointer<ToggleButton> toggleButton;
-    ScopedPointer<ToggleButton> toggleButton2;
-    ScopedPointer<ToggleButton> toggleButton3;
-    ScopedPointer<ToggleButton> toggleButton4;
-    ScopedPointer<ToggleButton> toggleButton5;
-    ScopedPointer<ToggleButton> toggleButton6;
-    ScopedPointer<ToggleButton> toggleButton7;
+    ScopedPointer<ToggleButton> leftIndex1;
+    ScopedPointer<ToggleButton> leftIndex2;
+    ScopedPointer<ToggleButton> leftMiddle;
+    ScopedPointer<ToggleButton> leftRing;
+    ScopedPointer<ToggleButton> leftPinky;
+    ScopedPointer<ToggleButton> leftThumb2;
+    ScopedPointer<ToggleButton> leftThumb1;
     ScopedPointer<TextButton> textButton;
     ScopedPointer<Label> ipLabel;
-    ScopedPointer<ToggleButton> toggleButton8;
-    ScopedPointer<ToggleButton> toggleButton9;
-    ScopedPointer<ToggleButton> toggleButton10;
-    ScopedPointer<ToggleButton> toggleButton11;
-    ScopedPointer<ToggleButton> toggleButton12;
-    ScopedPointer<ToggleButton> toggleButton13;
-    ScopedPointer<ToggleButton> toggleButton14;
+    ScopedPointer<ToggleButton> rightIndex1;
+    ScopedPointer<ToggleButton> rightIndex2;
+    ScopedPointer<ToggleButton> rightMiddle;
+    ScopedPointer<ToggleButton> rightRing;
+    ScopedPointer<ToggleButton> rightPinky;
+    ScopedPointer<ToggleButton> rightThumb2;
+    ScopedPointer<ToggleButton> rightThumb1;
     Image cachedImage_hands2_png2_1;
 
 

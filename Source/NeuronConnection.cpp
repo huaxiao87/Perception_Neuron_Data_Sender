@@ -90,11 +90,6 @@ void NeuronConnection::BvhExport() {
 		if (dataHeader && dataHeader->WithDisp)
 			m_perJoint = 6;
 
-		// Stupid way to wipe the content of tmp.bvh
-		// TODO: do it the right way
-		// EDIT: actually not that stupid.
-		m_outfile.open("tmp.bvh", std::ios_base::out);
-		m_outfile.close();
 	}
 
 	m_outfile.open("tmp.bvh", std::ios::out | std::ios::app);
@@ -144,9 +139,17 @@ void NeuronConnection::BvhExport() {
 				dataVector.push_back(bvhData[(i * 6) + 4]);
 				dataVector.push_back(bvhData[(i * 6) + 5]);
 				string data = "";
-				for (int i = 0;i < dataVector.size();i++) {
-					data += to_string(dataVector[i]) + " ";
-				}
+
+				data += activeFingerArray[LeftThumbIndex] ? (to_string(bvhData[LeftThumb * 6 + 5]) + " ") : "Null ";
+				data += activeFingerArray[LeftIndexIndex] ? (to_string(bvhData[LeftIndex * 6 + 5]) + " ") : "Null ";
+				data += activeFingerArray[LeftMiddleIndex] ? (to_string(bvhData[LeftMiddle * 6 + 5]) + " ") : "Null ";
+				data += activeFingerArray[LeftRingIndex] ? (to_string(bvhData[LeftRing * 6 + 5]) + " ") : "Null ";
+				data += activeFingerArray[LeftPinkyIndex] ? (to_string(bvhData[LeftPinky * 6 + 5]) + " ") : "Null ";
+
+
+				//for (int i = 0;i < dataVector.size();i++) {
+				//	data += to_string(dataVector[i]) + " ";
+				//}
 
 				strcpy(dataArray, data.c_str());
 				if (udp.waitUntilReady(false, 512)) {
@@ -155,7 +158,6 @@ void NeuronConnection::BvhExport() {
 			}
 		}
 
-		m_outfile << "\n";
 		m_outfile.close();
 	}
 

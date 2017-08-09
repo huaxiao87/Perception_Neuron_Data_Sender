@@ -13,8 +13,37 @@
 #include <string>
 #include <vector>
 
+#define NUM_FINGER_JOINTS 10
 #pragma comment(lib, "NeuronDataReader.lib")
+enum FingerType
+{
+	RightThumb = 17,
+	RightIndex = 21,
+	RightMiddle = 25,
+	RightRing = 29,
+	RightPinky = 33,
+	LeftThumb = 40,
+	LeftIndex = 44,
+	LeftMiddle = 48,
+	LeftRing = 52,
+	LeftPinky = 56
+	
+};
 
+enum FingerIndex
+{
+	LeftThumbIndex = 0,
+	LeftIndexIndex = 1,
+	LeftMiddleIndex = 2,
+	LeftRingIndex = 3,
+	LeftPinkyIndex = 4,
+	RightThumbIndex = 5,
+	RightIndexIndex = 6,
+	RightMiddleIndex = 7,
+	RightRingIndex = 8,
+	RightPinkyIndex = 9,
+	NumFingerJoints = NUM_FINGER_JOINTS
+};
 class NeuronConnection:
 	public ChangeBroadcaster,
 	public Thread
@@ -51,7 +80,7 @@ public:
 	DatagramSocket& getUdpSocket() { return udp; };
 	void setPort(int portNum) { port = portNum; }
 	void setIp(String ipAddress) { ip = ipAddress; }
-
+	bool* getActiveFingerArray() { return &activeFingerArray[0]; };
 	std::vector<float> dataVector;
 
 private:
@@ -82,9 +111,8 @@ private:
 	void run() override;
 	int port=8888;
 	String ip = "127.0.0.1";
+	bool activeFingerArray[NUM_FINGER_JOINTS];
 	JUCE_DECLARE_NON_COPYABLE_WITH_LEAK_DETECTOR(NeuronConnection)
-
-
 };
 
 /*
