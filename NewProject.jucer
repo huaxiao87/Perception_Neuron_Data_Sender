@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<JUCERPROJECT id="c4eKYw" name="Perception Neuron Data Sender" displaySplashScreen="1"
+              reportAppUsage="1" splashScreenColour="Dark" projectType="guiapp"
+              version="1.0.0" bundleIdentifier="com.yourcompany.NewProject"
+              includeBinaryInAppConfig="1" cppLanguageStandard="11" jucerVersion="5.1.1">
+  <MAINGROUP id="q7QMDg" name="Perception Neuron Data Sender">
+    <GROUP id="{F2C1C2F7-C306-B732-0DD1-75BF5179AE24}" name="Source">
+      <FILE id="zy9QWK" name="NeuronConnection.cpp" compile="1" resource="0"
+            file="Source/NeuronConnection.cpp"/>
+      <FILE id="e6QxaU" name="NeuronConnection.h" compile="0" resource="0"
+            file="Source/NeuronConnection.h"/>
+      <FILE id="QRBs0t" name="GUI.cpp" compile="1" resource="0" file="Source/GUI.cpp"/>
+      <FILE id="KkAEWQ" name="GUI.h" compile="0" resource="0" file="Source/GUI.h"/>
+      <FILE id="ApIRl2" name="Main.cpp" compile="1" resource="0" file="Source/Main.cpp"/>
+    </GROUP>
+  </MAINGROUP>
+  <EXPORTFORMATS>
+    <VS2015 targetFolder="Builds/VisualStudio2015">
+      <CONFIGURATIONS>
+        <CONFIGURATION name="Debug" winWarningLevel="4" generateManifest="1" winArchitecture="x64"
+                       isDebug="1" optimisation="1" targetName="NewProject" headerPath="C:\SDKs\NeuronDataReader SDK b17\include\NeuronDataReader"
+                       libraryPath="C:\SDKs\NeuronDataReader SDK b17\lib\win\desktop\x64"/>
+        <CONFIGURATION name="Release" winWarningLevel="4" generateManifest="1" winArchitecture="x64"
+                       isDebug="0" optimisation="3" targetName="NewProject"/>
+      </CONFIGURATIONS>
+      <MODULEPATHS>
+        <MODULEPATH id="juce_core" path="..\..\..\Desktop\JUCE\modules"/>
+        <MODULEPATH id="juce_events" path="..\..\..\Desktop\JUCE\modules"/>
+        <MODULEPATH id="juce_graphics" path="..\..\..\Desktop\JUCE\modules"/>
+        <MODULEPATH id="juce_data_structures" path="..\..\..\Desktop\JUCE\modules"/>
+        <MODULEPATH id="juce_gui_basics" path="..\..\..\Desktop\JUCE\modules"/>
+        <MODULEPATH id="juce_gui_extra" path="..\..\..\Desktop\JUCE\modules"/>
+        <MODULEPATH id="juce_cryptography" path="..\..\..\Desktop\JUCE\modules"/>
+        <MODULEPATH id="juce_video" path="..\..\..\Desktop\JUCE\modules"/>
+        <MODULEPATH id="juce_opengl" path="..\..\..\Desktop\JUCE\modules"/>
+      </MODULEPATHS>
+    </VS2015>
+  </EXPORTFORMATS>
+  <MODULES>
+    <MODULE id="juce_core" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_cryptography" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_data_structures" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_events" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_graphics" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_gui_basics" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_gui_extra" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_opengl" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_video" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+  </MODULES>
+  <JUCEOPTIONS/>
+</JUCERPROJECT>
