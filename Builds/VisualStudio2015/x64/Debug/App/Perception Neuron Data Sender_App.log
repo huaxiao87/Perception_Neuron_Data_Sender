@@ -8,8 +8,6 @@ C:\SDKs\NeuronDataReader SDK b17\include\NeuronDataReader\DataType.h(50): warnin
 C:\SDKs\NeuronDataReader SDK b17\include\NeuronDataReader\DataType.h(50): warning C4201: nonstandard extension used: nameless struct/union (compiling source file ..\..\Source\Main.cpp)
 ..\..\Source\GUI.cpp(353): warning C4244: '=': conversion from 'juce::juce_wchar' to 'char', possible loss of data
 ..\..\Source\GUI.cpp(349): warning C4100: 'source': unreferenced formal parameter
-..\..\Source\Main.cpp(27): warning C4100: 'commandLine': unreferenced formal parameter
-..\..\Source\Main.cpp(49): warning C4100: 'commandLine': unreferenced formal parameter
 ..\..\Source\NeuronConnection.cpp(64): warning C4100: 'sender': unreferenced formal parameter
 ..\..\Source\NeuronConnection.cpp(77): warning C4100: 'data': unreferenced formal parameter
 ..\..\Source\NeuronConnection.cpp(77): warning C4100: 'header': unreferenced formal parameter
@@ -23,6 +21,8 @@ C:\SDKs\NeuronDataReader SDK b17\include\NeuronDataReader\DataType.h(50): warnin
 ..\..\Source\NeuronConnection.cpp(132): warning C4018: '<': signed/unsigned mismatch
 ..\..\Source\NeuronConnection.cpp(147): warning C4456: declaration of 'i' hides previous local declaration
   ..\..\Source\NeuronConnection.cpp(132): note: see declaration of 'i'
+..\..\Source\Main.cpp(27): warning C4100: 'commandLine': unreferenced formal parameter
+..\..\Source\Main.cpp(49): warning C4100: 'commandLine': unreferenced formal parameter
   include_juce_cryptography.cpp
   include_juce_data_structures.cpp
   include_juce_events.cpp
