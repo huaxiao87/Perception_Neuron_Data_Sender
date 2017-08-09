@@ -1,5 +1,5 @@
-/Builds
-\Builds
+/Builds/
+Builds/
 # Compiled Object files
 *.slo
 *.lo

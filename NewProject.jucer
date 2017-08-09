@@ -3,7 +3,7 @@
 <JUCERPROJECT id="c4eKYw" name="Perception Neuron Data Sender" displaySplashScreen="1"
               reportAppUsage="1" splashScreenColour="Dark" projectType="guiapp"
               version="1.0.0" bundleIdentifier="com.yourcompany.NewProject"
-              includeBinaryInAppConfig="1" cppLanguageStandard="11" jucerVersion="5.0.1">
+              includeBinaryInAppConfig="1" cppLanguageStandard="11" jucerVersion="5.1.1">
   <MAINGROUP id="q7QMDg" name="Perception Neuron Data Sender">
     <GROUP id="{F2C1C2F7-C306-B732-0DD1-75BF5179AE24}" name="Source">
       <FILE id="zy9QWK" name="NeuronConnection.cpp" compile="1" resource="0"
