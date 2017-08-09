@@ -1,2 +1,34 @@
 ﻿C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppBuild.targets(392,5): warning MSB8028: The intermediate directory (x64\Debug\App\) contains files shared from another project (NewProject_App.vcxproj, Perception Neuron Sender_App.vcxproj).  This can lead to incorrect clean and rebuild behavior.
+  NeuronConnection.cpp
+  GUI.cpp
+  Main.cpp
+  include_juce_core.cpp
+C:\SDKs\NeuronDataReader SDK b17\include\NeuronDataReader\DataType.h(50): warning C4201: nonstandard extension used: nameless struct/union (compiling source file ..\..\Source\GUI.cpp)
+C:\SDKs\NeuronDataReader SDK b17\include\NeuronDataReader\DataType.h(50): warning C4201: nonstandard extension used: nameless struct/union (compiling source file ..\..\Source\NeuronConnection.cpp)
+C:\SDKs\NeuronDataReader SDK b17\include\NeuronDataReader\DataType.h(50): warning C4201: nonstandard extension used: nameless struct/union (compiling source file ..\..\Source\Main.cpp)
+..\..\Source\GUI.cpp(353): warning C4244: '=': conversion from 'juce::juce_wchar' to 'char', possible loss of data
+..\..\Source\GUI.cpp(349): warning C4100: 'source': unreferenced formal parameter
+..\..\Source\Main.cpp(27): warning C4100: 'commandLine': unreferenced formal parameter
+..\..\Source\Main.cpp(49): warning C4100: 'commandLine': unreferenced formal parameter
+..\..\Source\NeuronConnection.cpp(64): warning C4100: 'sender': unreferenced formal parameter
+..\..\Source\NeuronConnection.cpp(77): warning C4100: 'data': unreferenced formal parameter
+..\..\Source\NeuronConnection.cpp(77): warning C4100: 'header': unreferenced formal parameter
+..\..\Source\NeuronConnection.cpp(77): warning C4100: 'sender': unreferenced formal parameter
+..\..\Source\NeuronConnection.cpp(109): warning C4018: '<': signed/unsigned mismatch
+..\..\Source\NeuronConnection.cpp(121): warning C4458: declaration of 'dataArray' hides class member
+  c:\users\hua\documents\github\perception_neuron_data_sender\source\NeuronConnection.h(81): note: see declaration of 'NeuronConnection::dataArray' (compiling source file ..\..\Source\NeuronConnection.cpp)
+..\..\Source\NeuronConnection.cpp(122): warning C4456: declaration of 'i' hides previous local declaration
+  ..\..\Source\NeuronConnection.cpp(109): note: see declaration of 'i'
+..\..\Source\NeuronConnection.cpp(123): warning C4244: '=': conversion from 'float' to 'char', possible loss of data
+..\..\Source\NeuronConnection.cpp(132): warning C4018: '<': signed/unsigned mismatch
+..\..\Source\NeuronConnection.cpp(147): warning C4456: declaration of 'i' hides previous local declaration
+  ..\..\Source\NeuronConnection.cpp(132): note: see declaration of 'i'
+  include_juce_cryptography.cpp
+  include_juce_data_structures.cpp
+  include_juce_events.cpp
+  include_juce_graphics.cpp
+  include_juce_gui_basics.cpp
+  include_juce_gui_extra.cpp
+  include_juce_opengl.cpp
+  include_juce_video.cpp
   Perception Neuron Data Sender_App.vcxproj -> C:\Users\Hua\Documents\GitHub\Perception_Neuron_Data_Sender\Builds\VisualStudio2015\x64\Debug\App\NewProject.exe
